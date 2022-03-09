@@ -3,23 +3,24 @@ const mongoose = require('../database');
 const RecordSchema = new mongoose.Schema({
     id:{
         type: Number,
-        require: true,
+        required: true,
     },
     node:{
         type: String,
-        require: true,
+        required: true,
     },
     time_utc:{
         type: Date,
         default: Date.now,
+        required: true,
     },
     rssi:{
         type: Number,
-        require: true,
+        required: true,
     },
     snr:{
         type: Number,
-        require: true,
+        required: true,
     },
     distance_01:{type: Number,require: false,},
     distance_02:{type: Number,require: false,},

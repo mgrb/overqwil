@@ -7,6 +7,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:false}));
 
 require('./controllers/recordController')(app);
+require('./controllers/authController')(app);
 
 console.log('SERVER ON: http://localhost:3000/');
 
