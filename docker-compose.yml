@@ -13,3 +13,9 @@ services:
     image: mongo
     ports:
       - "27017:27017"
+    volumes:
+      - dbdata-volume:/data/db
+
+volumes:
+  dbdata-volume:
+    driver: local
